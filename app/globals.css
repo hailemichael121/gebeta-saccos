@@ -251,3 +251,23 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 }
+
+@keyframes money-rise {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-120vh) rotate(10deg);
+    opacity: 0;
+  }
+}
+
+.animate-money-rise {
+  animation-name: money-rise;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
